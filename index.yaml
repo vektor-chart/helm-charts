@@ -3,7 +3,7 @@ entries:
   agent-backend:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-06-29T14:38:28.372379+04:00"
+    created: "2026-06-29T14:42:37.679597+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: c49a379e14159518f1ec620285e6115908d7038e0056f4b967664f60cbce8b70
     maintainers:
@@ -15,7 +15,7 @@ entries:
   trace-monitoring:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-29T14:38:28.376937+04:00"
+    created: "2026-06-29T14:42:37.684454+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -32,10 +32,10 @@ entries:
       version: 15.5.0
     description: Umbrella Helm chart for Trace Monitoring Cluster (api, frontend,
       ingestor + dynamic minio, clickhouse, kafka)
-    digest: a1fb8061ff85dd32cbdb021392eaaf2995fbf672cfcbab9ffdb80e69a23f9499
+    digest: 5e6debfc7d46aed1e922058ec8f14c909a1c196bf6a95444e214fd4460994990
     name: trace-monitoring
     type: application
     urls:
     - https://vektor-chart.github.io/helm-charts/trace-monitoring-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-29T14:38:28.371542+04:00"
+generated: "2026-06-29T14:42:37.678776+04:00"
