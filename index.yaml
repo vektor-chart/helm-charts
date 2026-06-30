@@ -3,7 +3,7 @@ entries:
   agent-backend:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-06-30T09:41:45.391335+04:00"
+    created: "2026-06-30T13:39:58.799252+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: c63f1ed1674dc85f2605d30689b5822c91c88da4315c9352601ba2ba703704b2
     maintainers:
@@ -14,7 +14,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-06-30T09:41:45.388364+04:00"
+    created: "2026-06-30T13:39:58.796238+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 23865e442170404e17252e8e85d51172444812175271da4cf8e626deff844d1c
     maintainers:
@@ -26,7 +26,32 @@ entries:
   trace-monitoring:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T09:41:45.41223+04:00"
+    created: "2026-06-30T13:39:58.824578+04:00"
+    dependencies:
+    - name: api-backend
+      repository: file://../api-backend
+      version: 0.1.3
+    - name: app-frontend
+      repository: file://../app-frontend
+      version: 0.1.3
+    - name: ingestor-backend
+      repository: file://../ingestor-backend
+      version: 0.1.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.0
+    description: Umbrella Helm chart for Trace Monitoring Cluster (api, frontend,
+      ingestor + dynamic minio, clickhouse, kafka)
+    digest: d6da6a4731fc5aa461e09afa1bcea1d6a11e7cad4a48eaf650ece8a4e2e72316
+    name: trace-monitoring
+    type: application
+    urls:
+    - https://vektor-chart.github.io/helm-charts/trace-monitoring-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-06-30T13:39:58.819688+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -51,7 +76,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T09:41:45.407496+04:00"
+    created: "2026-06-30T13:39:58.815057+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -76,7 +101,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T09:41:45.401954+04:00"
+    created: "2026-06-30T13:39:58.809917+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -101,7 +126,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T09:41:45.396845+04:00"
+    created: "2026-06-30T13:39:58.804178+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -124,4 +149,4 @@ entries:
     urls:
     - https://vektor-chart.github.io/helm-charts/trace-monitoring-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-30T09:41:45.38473+04:00"
+generated: "2026-06-30T13:39:58.792482+04:00"
