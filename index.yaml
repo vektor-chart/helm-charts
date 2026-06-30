@@ -3,7 +3,7 @@ entries:
   agent-backend:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-06-30T15:48:33.738005+04:00"
+    created: "2026-06-30T15:57:44.443601+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 3080e14847be61d88051342af80ea397b690c85857e81f0eb8354a69d91b2ea7
     maintainers:
@@ -14,7 +14,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-06-30T15:48:33.734911+04:00"
+    created: "2026-06-30T15:57:44.440393+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 23865e442170404e17252e8e85d51172444812175271da4cf8e626deff844d1c
     maintainers:
@@ -26,7 +26,7 @@ entries:
   trace-monitoring:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T15:48:33.764503+04:00"
+    created: "2026-06-30T15:57:44.472031+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -51,7 +51,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T15:48:33.759827+04:00"
+    created: "2026-06-30T15:57:44.466544+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -76,7 +76,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T15:48:33.754203+04:00"
+    created: "2026-06-30T15:57:44.461393+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -101,7 +101,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T15:48:33.748632+04:00"
+    created: "2026-06-30T15:57:44.45449+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -126,7 +126,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T15:48:33.743622+04:00"
+    created: "2026-06-30T15:57:44.448948+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -149,4 +149,4 @@ entries:
     urls:
     - https://vektor-chart.github.io/helm-charts/trace-monitoring-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-30T15:48:33.731231+04:00"
+generated: "2026-06-30T15:57:44.436349+04:00"
