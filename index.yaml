@@ -3,7 +3,18 @@ entries:
   agent-backend:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-06-30T09:02:34.575932+04:00"
+    created: "2026-06-30T09:04:39.250901+04:00"
+    description: A Helm chart for KubeTrace Host Agent
+    digest: c63f1ed1674dc85f2605d30689b5822c91c88da4315c9352601ba2ba703704b2
+    maintainers:
+    - name: DevOps Engineer
+    name: agent-backend
+    urls:
+    - https://vektor-chart.github.io/helm-charts/agent-backend-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2026-06-30T09:04:39.248365+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 23865e442170404e17252e8e85d51172444812175271da4cf8e626deff844d1c
     maintainers:
@@ -15,7 +26,32 @@ entries:
   trace-monitoring:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-30T09:02:34.580454+04:00"
+    created: "2026-06-30T09:04:39.263485+04:00"
+    dependencies:
+    - name: api-backend
+      repository: file://../api-backend
+      version: 0.1.1
+    - name: app-frontend
+      repository: file://../app-frontend
+      version: 0.1.0
+    - name: ingestor-backend
+      repository: file://../ingestor-backend
+      version: 0.1.0
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.0
+    description: Umbrella Helm chart for Trace Monitoring Cluster (api, frontend,
+      ingestor + dynamic minio, clickhouse, kafka)
+    digest: c181aa30aab6bea936e0182fdf9de2d8345d4e6d6d641a620460a690a275e9b8
+    name: trace-monitoring
+    type: application
+    urls:
+    - https://vektor-chart.github.io/helm-charts/trace-monitoring-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-06-30T09:04:39.258555+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -38,4 +74,4 @@ entries:
     urls:
     - https://vektor-chart.github.io/helm-charts/trace-monitoring-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-30T09:02:34.572936+04:00"
+generated: "2026-06-30T09:04:39.245309+04:00"
