@@ -1,9 +1,26 @@
 apiVersion: v1
 entries:
   agent-backend:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-07-23T09:42:53.338613+04:00"
+    dependencies:
+    - condition: opentelemetry-operator.enabled
+      name: opentelemetry-operator
+      repository: https://open-telemetry.github.io/opentelemetry-helm-charts
+      version: 0.58.0
+    description: A Helm chart for KubeTrace Host Agent
+    digest: 81648c639bcaf8ebf639f0ac7a65df995451aa5747e1430a06d844ca36772aaa
+    maintainers:
+    - name: DevOps Engineer
+    name: agent-backend
+    type: application
+    urls:
+    - https://vektor-chart.github.io/helm-charts/agent-backend-0.1.5.tgz
+    version: 0.1.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T09:34:01.792718+04:00"
+    created: "2026-07-23T09:42:53.335314+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 4f71a1e8dcb5df7bcac925bd155e139383dbd7d9ceebd1eb305983345497ea26
     maintainers:
@@ -14,7 +31,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T09:34:01.789832+04:00"
+    created: "2026-07-23T09:42:53.332352+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: b7203cbfd57f87d81906cbdb7d924ba8a32d8e5ed64b4b595f422b53566c7bd1
     maintainers:
@@ -25,7 +42,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T09:34:01.786727+04:00"
+    created: "2026-07-23T09:42:53.328401+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 34f06fdd3634d3be7702887e74adb65ce7597ed69399b4dd5e21c7d29a243f57
     maintainers:
@@ -36,7 +53,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T09:34:01.783721+04:00"
+    created: "2026-07-23T09:42:53.32486+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: badef763ccb3ed2347305b882d80f0061a343f4f56f89736408a77f0750b257e
     maintainers:
@@ -47,7 +64,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T09:34:01.780438+04:00"
+    created: "2026-07-23T09:42:53.320567+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 23865e442170404e17252e8e85d51172444812175271da4cf8e626deff844d1c
     maintainers:
@@ -59,7 +76,32 @@ entries:
   trace-monitoring:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.840776+04:00"
+    created: "2026-07-23T09:42:53.353632+04:00"
+    dependencies:
+    - name: api-backend
+      repository: file://../api-backend
+      version: 0.1.8
+    - name: app-frontend
+      repository: file://../app-frontend
+      version: 0.1.7
+    - name: ingestor-backend
+      repository: file://../ingestor-backend
+      version: 0.1.5
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.0
+    description: Umbrella Helm chart for Trace Monitoring Cluster (api, frontend,
+      ingestor + dynamic minio, clickhouse, kafka)
+    digest: 25a1235f226a57603e0a35f5bff920858ca5c4deeb67fcf62c3d95a1041ebf7b
+    name: trace-monitoring
+    type: application
+    urls:
+    - https://vektor-chart.github.io/helm-charts/trace-monitoring-0.1.10.tgz
+    version: 0.1.10
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-07-23T09:42:53.395627+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -84,7 +126,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.835697+04:00"
+    created: "2026-07-23T09:42:53.390315+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -109,7 +151,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.831262+04:00"
+    created: "2026-07-23T09:42:53.385341+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -134,7 +176,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.826241+04:00"
+    created: "2026-07-23T09:42:53.379655+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -159,7 +201,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.821994+04:00"
+    created: "2026-07-23T09:42:53.374626+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -184,7 +226,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.816968+04:00"
+    created: "2026-07-23T09:42:53.369082+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -209,7 +251,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.812098+04:00"
+    created: "2026-07-23T09:42:53.36438+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -234,7 +276,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.807769+04:00"
+    created: "2026-07-23T09:42:53.35832+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -259,7 +301,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.802407+04:00"
+    created: "2026-07-23T09:42:53.348439+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -284,7 +326,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T09:34:01.797862+04:00"
+    created: "2026-07-23T09:42:53.343366+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -307,4 +349,4 @@ entries:
     urls:
     - https://vektor-chart.github.io/helm-charts/trace-monitoring-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-23T09:34:01.77706+04:00"
+generated: "2026-07-23T09:42:53.317198+04:00"
