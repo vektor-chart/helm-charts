@@ -3,7 +3,24 @@ entries:
   agent-backend:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.241726+04:00"
+    created: "2026-07-23T16:48:27.834691+04:00"
+    dependencies:
+    - condition: opentelemetry-operator.enabled
+      name: opentelemetry-operator
+      repository: https://open-telemetry.github.io/opentelemetry-helm-charts
+      version: 0.58.0
+    description: A Helm chart for KubeTrace Host Agent
+    digest: a604db9ecdf382827c92bf115539dcf0a244e587c15fd872da21840ca8311a16
+    maintainers:
+    - name: DevOps Engineer
+    name: agent-backend
+    type: application
+    urls:
+    - https://vektor-chart.github.io/helm-charts/agent-backend-0.1.12.tgz
+    version: 0.1.12
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-07-23T16:48:27.831621+04:00"
     dependencies:
     - condition: opentelemetry-operator.enabled
       name: opentelemetry-operator
@@ -20,7 +37,7 @@ entries:
     version: 0.1.11
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.238415+04:00"
+    created: "2026-07-23T16:48:27.827483+04:00"
     dependencies:
     - condition: opentelemetry-operator.enabled
       name: opentelemetry-operator
@@ -37,7 +54,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.271866+04:00"
+    created: "2026-07-23T16:48:27.864276+04:00"
     dependencies:
     - condition: opentelemetry-operator.enabled
       name: opentelemetry-operator
@@ -54,7 +71,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.268026+04:00"
+    created: "2026-07-23T16:48:27.860399+04:00"
     dependencies:
     - condition: opentelemetry-operator.enabled
       name: opentelemetry-operator
@@ -71,7 +88,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.264348+04:00"
+    created: "2026-07-23T16:48:27.856918+04:00"
     dependencies:
     - condition: opentelemetry-operator.enabled
       name: opentelemetry-operator
@@ -88,7 +105,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.260376+04:00"
+    created: "2026-07-23T16:48:27.85314+04:00"
     dependencies:
     - condition: opentelemetry-operator.enabled
       name: opentelemetry-operator
@@ -105,7 +122,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.257146+04:00"
+    created: "2026-07-23T16:48:27.849821+04:00"
     dependencies:
     - condition: opentelemetry-operator.enabled
       name: opentelemetry-operator
@@ -122,7 +139,7 @@ entries:
     version: 0.1.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.252859+04:00"
+    created: "2026-07-23T16:48:27.846057+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 4f71a1e8dcb5df7bcac925bd155e139383dbd7d9ceebd1eb305983345497ea26
     maintainers:
@@ -133,7 +150,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.24913+04:00"
+    created: "2026-07-23T16:48:27.84219+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: b7203cbfd57f87d81906cbdb7d924ba8a32d8e5ed64b4b595f422b53566c7bd1
     maintainers:
@@ -144,7 +161,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.245221+04:00"
+    created: "2026-07-23T16:48:27.838403+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 34f06fdd3634d3be7702887e74adb65ce7597ed69399b4dd5e21c7d29a243f57
     maintainers:
@@ -155,7 +172,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.23386+04:00"
+    created: "2026-07-23T16:48:27.823405+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: badef763ccb3ed2347305b882d80f0061a343f4f56f89736408a77f0750b257e
     maintainers:
@@ -166,7 +183,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2026-07-23T16:42:13.229938+04:00"
+    created: "2026-07-23T16:48:27.819392+04:00"
     description: A Helm chart for KubeTrace Host Agent
     digest: 23865e442170404e17252e8e85d51172444812175271da4cf8e626deff844d1c
     maintainers:
@@ -178,7 +195,7 @@ entries:
   trace-monitoring:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.306418+04:00"
+    created: "2026-07-23T16:48:27.898829+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -203,7 +220,7 @@ entries:
     version: 0.1.14
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.301813+04:00"
+    created: "2026-07-23T16:48:27.894217+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -228,7 +245,7 @@ entries:
     version: 0.1.13
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.296616+04:00"
+    created: "2026-07-23T16:48:27.889156+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -253,7 +270,7 @@ entries:
     version: 0.1.12
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.291366+04:00"
+    created: "2026-07-23T16:48:27.883873+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -278,7 +295,7 @@ entries:
     version: 0.1.11
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.286456+04:00"
+    created: "2026-07-23T16:48:27.878966+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -303,7 +320,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.346216+04:00"
+    created: "2026-07-23T16:48:27.938923+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -328,7 +345,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.341171+04:00"
+    created: "2026-07-23T16:48:27.933761+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -353,7 +370,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.336349+04:00"
+    created: "2026-07-23T16:48:27.928257+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -378,7 +395,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.331115+04:00"
+    created: "2026-07-23T16:48:27.923475+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -403,7 +420,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.326067+04:00"
+    created: "2026-07-23T16:48:27.918439+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -428,7 +445,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.320934+04:00"
+    created: "2026-07-23T16:48:27.913256+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -453,7 +470,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.31639+04:00"
+    created: "2026-07-23T16:48:27.90817+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -478,7 +495,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.311445+04:00"
+    created: "2026-07-23T16:48:27.903617+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -503,7 +520,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.281419+04:00"
+    created: "2026-07-23T16:48:27.873855+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -528,7 +545,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-23T16:42:13.27653+04:00"
+    created: "2026-07-23T16:48:27.86889+04:00"
     dependencies:
     - name: api-backend
       repository: file://../api-backend
@@ -551,4 +568,4 @@ entries:
     urls:
     - https://vektor-chart.github.io/helm-charts/trace-monitoring-0.1.0.tgz
     version: 0.1.0
-generated: "2026-07-23T16:42:13.226554+04:00"
+generated: "2026-07-23T16:48:27.816149+04:00"
